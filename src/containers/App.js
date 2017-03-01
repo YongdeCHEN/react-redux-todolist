@@ -57,7 +57,7 @@ function selectTodos(todos, filter) {
     default:
       return todos;
   } 
-}
+}     
     
 function select(state) {
   return {
@@ -65,5 +65,6 @@ function select(state) {
     visibilityFilter: state.visibilityFilter ? state.visibilityFilter : VisibilityFilters.SHOW_ALL
   };
 }
-
+      
 export default connect(select)(App);
+
