@@ -56,9 +56,9 @@ function selectTodos(todos, filter) {
       return todos.filter(todo => !todo.completed);
     default:
       return todos;
-  }
+  } 
 }
-
+    
 function select(state) {
   return {
     visibleTodos: selectTodos(state.todos, state.visibilityFilter),
